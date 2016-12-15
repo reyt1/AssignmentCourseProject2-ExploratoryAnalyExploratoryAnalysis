@@ -1,3 +1,4 @@
+#2nd question, plot "plot2.png"
 BaltimoreCityEmissions<-summarise(group_by(filter(NEI, fips == "24510"), year), Emissions=sum(Emissions))
 colorstoplot <- c("red", "deeppink3", "indianred1", "greenyellow")
 x2<-barplot(height=BaltimoreCityEmissions$Emissions/1000, 
