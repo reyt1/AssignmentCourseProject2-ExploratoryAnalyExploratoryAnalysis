@@ -5,7 +5,7 @@ library(ggplot2)
 library(dplyr)
 BaltEmissionsbyYear<-summarise(group_by(filter(NEI, fips == "24510"), year,type), Emissions=sum(Emissions))
 ggplot(BaltEmissionsbyYear, aes(x=factor(year),
-							                  y=Emissions, 
+				y=Emissions, 
                                 fill=type,
                                 label = round(Emissions,2))) +
                                 geom_bar(stat="identity") +
