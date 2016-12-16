@@ -40,6 +40,6 @@ head(SCC)
 dir("./data")
 
 # visualization
-number.add.width<-800                             # width length to make the changes faster
-number.add.height<-800                             # height length to make the changes fa
+number.add.width<-800     # width length to make the changes faster
+number.add.height<-800    # height length to make the changes faster
 library(dplyr)
