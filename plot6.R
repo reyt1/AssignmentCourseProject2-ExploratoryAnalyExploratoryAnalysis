@@ -1,4 +1,4 @@
-6th question. Compare emissions Baltimore City and Los Angeles County
+#6th question. Compare emissions Baltimore City and Los Angeles County
 library(ggplot2)
 library(dplyr)
 BaltEmission<-summarise(group_by(filter(NEI, fips == "24510"& type == 'ON-ROAD'), year), Emissions=sum(Emissions))
